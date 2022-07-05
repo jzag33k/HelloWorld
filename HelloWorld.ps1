@@ -10,3 +10,5 @@ catch {
     Start-Process -FilePath "$($DownloadDir)\HPCM.exe" -ArgumentList "/VERYSILENT /LOG=$($DownloadDir)\InstallLog.log" -Wait
     Write-Output "Finished Downloading and Installing HP Module"
     }
+    
+Return $RebootNeeded
